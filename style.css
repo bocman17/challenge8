@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+
+canvas {
+    border: 1px solid rebeccapurple;
+    background-color: #fff;
+}
+
+.toolbox {
+    background-color: rebeccapurple;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbox button {
+    font-size: 2rem;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-family: inherit;
+    font-weight: 900;
+
+}
+
+.toolbox span {
+    font-weight: 900;
+    color: #fff;
+}
+
+.toolbox input {
+    height: 50px;
+    width: 50px;
+    border: 1px dashed white;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rebeccapurple;
+    margin: 10px;
+
+}
+
+.toolbox > *:last-child {
+    margin-left:auto;
+}

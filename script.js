@@ -21,6 +21,7 @@ const decreaseBtn = document.getElementById('decrease');
 const sizeEl = document.getElementById('size');
 const colorEl = document.getElementById('color');
 const clearEl = document.getElementById('clear');
+const eraserEl = document.getElementById('eraser');
 
 let size = 30;
 let isPressed = false;
@@ -100,4 +101,9 @@ function updateSizeOnScreen() {
 
 clearEl.addEventListener('click', () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+})
+
+eraserEl.addEventListener('click', () => {
+    color = "white";
+    ctx.fillStyle = color;
 })
